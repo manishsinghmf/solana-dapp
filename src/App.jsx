@@ -1,20 +1,20 @@
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-
-import ReadBalance from "./components/ReadBalance";
-import SendTransaction from "./components/SendTransaction";
-import RequestAirdrop from "./components/RequestAirdrop";
+import DashboardLayout from "./layouts/DashboardLayout";
+import ConnectWallet from "./components/wallet/ConnectWallet";
+import BalanceCard from "./components/balance/BalanceCard";
+import SendSolCard from "./components/transaction/SendSolCard";
+import AirdropCard from "./components/transaction/AirdropCard";
 
 function App() {
   return (
-    <div style={{ padding: "20px", textAlign: "center" }}>
-      <WalletMultiButton />
+    <DashboardLayout>
+      <ConnectWallet />
 
-      <ReadBalance />
-
-      <SendTransaction />
-
-      <RequestAirdrop />
-    </div>
+      <div className="space-y-6">
+        <BalanceCard />
+        <SendSolCard />
+        <AirdropCard />
+      </div>
+    </DashboardLayout>
   );
 }
 

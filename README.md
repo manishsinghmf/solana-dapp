@@ -1,16 +1,110 @@
-# React + Vite
+# Solana DApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A decentralized application (dApp) built on the Solana blockchain, enabling users to connect their wallets, view balances, send SOL tokens, and request airdrops seamlessly.
 
-Currently, two official plugins are available:
+## Why This Project is Useful
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Fast Transactions**: Leverages Solana's high-speed blockchain for quick and cost-effective transactions.
+- **User-Friendly Interface**: Simple and intuitive UI for wallet connection, balance viewing, and token transfers.
+- **Developer-Friendly**: Modular and well-structured codebase for easy customization and extension.
 
-## React Compiler
+## Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Wallet Integration**: Supports Phantom and Solflare wallets via `@solana/wallet-adapter`.
+- **Balance Viewer**: Displays the user's SOL balance in real-time.
+- **Token Transfers**: Allows users to send SOL tokens to other wallets.
+- **Airdrop Requests**: Enables users to request 1 SOL airdrop on the devnet.
 
-## Expanding the ESLint configuration
+## Project structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   ```bash
+   src/
+    ├── components/
+    │     ├── wallet/
+    │     │     ├── ConnectWallet.jsx
+    │     ├── balance/
+    │     │     ├── BalanceCard.jsx
+    │     ├── transaction/
+    │     │     ├── SendSolCard.jsx
+    │     │     ├── AirdropCard.jsx
+    │
+    ├── layouts/
+    │     ├── DashboardLayout.jsx
+    │
+    ├── App.jsx
+    ├── main.jsx
+    ├── index.css
+   ```
+
+## Tech Stack
+
+- React
+- Vite
+- Tailwind CSS v4
+- Solana Wallet Adapter
+- @solana/web3.js
+- react-hot-toast
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm (v8 or higher)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/solana-dapp.git
+   cd solana-dapp
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open the app in your browser:
+   ```bash
+   http://localhost:5173
+   ```
+
+## Usage
+1. **Connect Wallet**: Click the "Connect Wallet" button to link your Phantom or Solflare wallet.
+2. **View Balance**: Your SOL balance will be displayed after connecting your wallet.
+3. Send SOL: Enter the recipient's public key and the amount of SOL to send, then click "Send."
+4. Request Airdrop: Click the "Request 1 SOL Airdrop" button to receive SOL on the devnet.
+
+## Example
+   ```bash
+   # Start the app
+    npm run dev
+
+    # Interact with the dApp:
+    # - Connect your wallet
+    # - View your balance
+    # - Send SOL tokens
+    # - Request an airdrop
+   ```
+
+## Support
+For help or questions, refer to the following resources:
+
+
+[Solana Documentation](https://docs.solana.com/)
+
+[Wallet Adapter Guide](https://github.com/anza-xyz/wallet-adapter)
+
+[React Hot Toast Documentation](https://react-hot-toast.com/)
+
+## Maintainers and Contributions
+This project is maintained by Manish. Contributions are welcome! Please follow the CONTRIBUTING.md guidelines.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
