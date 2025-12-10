@@ -77,8 +77,8 @@ A decentralized application (dApp) built on the Solana blockchain, enabling user
 ## Usage
 1. **Connect Wallet**: Click the "Connect Wallet" button to link your Phantom or Solflare wallet.
 2. **View Balance**: Your SOL balance will be displayed after connecting your wallet.
-3. Send SOL: Enter the recipient's public key and the amount of SOL to send, then click "Send."
-4. Request Airdrop: Click the "Request 1 SOL Airdrop" button to receive SOL on the devnet.
+3. **Send SOL**: Enter the recipient's public key and the amount of SOL to send, then click "Send."
+4. **Request Airdrop**: Click the "Request 1 SOL Airdrop" button to receive SOL on the devnet.
 
 ## Example
    ```bash
@@ -103,7 +103,7 @@ For help or questions, refer to the following resources:
 [React Hot Toast Documentation](https://react-hot-toast.com/)
 
 ## Maintainers and Contributions
-This project is maintained by Manish. Contributions are welcome! Please follow the CONTRIBUTING.md guidelines.
+This project is maintained by [Manish](https://github.com/manishsinghmf). Contributions are welcome!.
 
 ## License
 
