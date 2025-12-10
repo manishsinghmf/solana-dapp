@@ -56,7 +56,7 @@ A decentralized application (dApp) built on the Solana blockchain, enabling user
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/solana-dapp.git
+   git clone https://github.com/manishsinghmf/solana-dapp.git
    cd solana-dapp
    ```
 
