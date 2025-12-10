@@ -26,6 +26,8 @@ export default function RequestAirdrop() {
         }
     }
 
+    if (!publicKey) return <p>Connect wallet to Request Airdrop</p>;
+
     return (
         <div style={{ marginTop: "40px" }}>
             <h2>Request Airdrop</h2>
