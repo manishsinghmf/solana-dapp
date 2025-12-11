@@ -2,6 +2,8 @@
 
 A decentralized application (dApp) built on the Solana blockchain, enabling users to connect their wallets, view balances, send SOL tokens, and request airdrops seamlessly.
 
+**Demo**: [https://solana-dapp-pearl.vercel.app/](https://solana-dapp-pearl.vercel.app/)
+
 ## Why This Project is Useful
 
 - **Fast Transactions**: Leverages Solana's high-speed blockchain for quick and cost-effective transactions.
